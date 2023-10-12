@@ -50,6 +50,7 @@ ul {
 
 input {
   height: 55px;
+  font-size: 18px;
 }
 
 input::placeholder {
@@ -1218,12 +1219,17 @@ a {
   width: 280px;
   margin: 15px;
   height: 40px;
+  font-size: 18px;
 }
 
 .training_form input::placeholder {
   font-size: 20px;
   padding-bottom: 5px;
   color: #000;
+}
+
+.training_form input:focus {
+  outline: none;
 }
 
 @media (max-width: 576px) {
@@ -1308,6 +1314,13 @@ a {
   background-image: url(./media/icons/Banks_Icon.png);
   background-repeat: no-repeat;
   background-position: calc(100% - 10px) 50%;
+  font-size: 18px;
+  border: 1px solid #000;
+  padding-left: 10px;
+}
+
+.payment_cc-inputs input {
+  padding-left: 10px;
 }
 
 .payment_cc-inputs #ccSecurityCode {
@@ -1315,6 +1328,8 @@ a {
   background-repeat: no-repeat;
   background-position: right;
   background-position: calc(100% - 10px) 50%;
+  font-size: 18px;
+  border: 1px solid #000;
 }
 
 @media (max-width: 576px) {
