@@ -1185,13 +1185,10 @@ a {
 .subscriptions_logo {
   position: absolute;
   top: -160px;
-  left: 39%;
+  left: 50%;
+  transform: translateX(-50%);
 }
-@media (max-width: 576px) {
-  .subscriptions_logo {
-    left: 4.5%;
-  }
-}
+
 .subscriptions_text-container {
   display: flex;
   justify-content: space-between;
@@ -1220,6 +1217,7 @@ a {
   margin: 15px;
   height: 40px;
   font-size: 18px;
+  border-radius: 0;
 }
 
 .training_form input::placeholder {
