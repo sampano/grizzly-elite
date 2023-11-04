@@ -1,0 +1,43 @@
+.bonuses {
+  padding-bottom: 200px;
+  position: relative;
+}
+
+.bonuses_polygon_01 {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+}
+
+.bonuses_polygon_02 {
+  position: absolute;
+  right: 5%;
+  top: 8%;
+}
+
+.bonuses_type {
+  margin: 0 auto;
+  width: 786px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 990px) {
+  .bonuses_polygon_01 {
+    display: none;
+  }
+
+  .bonuses_polygon_02 {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .bonuses_type {
+    width: 100%;
+    flex-direction: column;
+  }
+}

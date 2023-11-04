@@ -1,0 +1,33 @@
+.training_form {
+  width: 850px;
+  margin: 0 auto;
+}
+
+.training_form input {
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 280px;
+  margin: 15px;
+  height: 40px;
+  font-size: 18px;
+  border-radius: 0;
+}
+
+.training_form input::placeholder {
+  font-size: 20px;
+  padding-bottom: 5px;
+  color: #000;
+}
+
+.training_form input:focus {
+  outline: none;
+}
+
+@media (max-width: 576px) {
+  .training_form {
+    width: 100%;
+  }
+  .training_form input {
+    width: 90%;
+  }
+}

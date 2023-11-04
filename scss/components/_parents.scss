@@ -1,0 +1,12 @@
+.parents .parents_profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+@media (max-width: 576px) {
+  .parents .parents_profile-container {
+    flex-wrap: wrap;
+  }
+}

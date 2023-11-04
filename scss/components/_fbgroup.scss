@@ -1,0 +1,12 @@
+.fb-group .fb-group_profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+@media (max-width: 576px) {
+  .fb-group .fb-group_profile-container {
+    flex-wrap: wrap;
+  }
+}

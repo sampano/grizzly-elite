@@ -1,0 +1,23 @@
+.nav {
+  max-width: 1140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  min-height: 88px;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .countdown_link {
+    display: flex;
+    width: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav {
+    flex-direction: column;
+  }
+}

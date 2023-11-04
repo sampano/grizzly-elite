@@ -1,0 +1,104 @@
+.payment {
+  position: relative;
+}
+.payment_type-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@media (max-width: 576px) {
+  .payment_type-container {
+    flex-wrap: wrap;
+  }
+}
+.payment_type {
+  border: 1px solid var(--text-color-primary);
+  padding: 30px;
+  min-height: 420px;
+}
+
+.payment_type._dotted-border {
+  position: relative;
+  border: none;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23F47B20FF' stroke-width='3' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+
+.payment_special-text {
+  border: 1px solid var(--text-color-primary);
+  padding: 10px;
+  position: absolute;
+  top: -20px;
+  left: 16%;
+  background-color: var(--text-color-secondary);
+}
+
+.payment_cc-container {
+  width: 720px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.payment_cc-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@media (max-width: 576px) {
+  .payment_cc-container {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .payment_cc-buttons {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.payment_cc-inputs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.payment_cc-inputs .cc_input {
+  width: 48%;
+}
+
+.payment_cc-inputs #ccNumber {
+  background-image: url(./media/icons/Banks_Icon.png);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) 50%;
+  font-size: 18px;
+  border: 1px solid #000;
+  padding-left: 10px;
+}
+
+.payment_cc-inputs input {
+  padding-left: 10px;
+}
+
+.payment_cc-inputs #ccSecurityCode {
+  background-image: url(./media/icons/CC_Icon_01.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position: calc(100% - 10px) 50%;
+  font-size: 18px;
+  border: 1px solid #000;
+}
+
+@media (max-width: 576px) {
+  .payment_cc-inputs #ccNumber {
+    background-image: none;
+  }
+
+  .payment_cc-inputs #ccSecurityCode {
+    background-image: none;
+  }
+
+  .payment_cc-inputs .cc_input {
+    width: 100%;
+  }
+}

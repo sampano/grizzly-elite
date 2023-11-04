@@ -1,0 +1,27 @@
+.subscriptions {
+  padding: 250px 0;
+  position: relative;
+}
+
+.subscriptions_logo {
+  position: absolute;
+  top: -160px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.subscriptions_text-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+@media (max-width: 576px) {
+  .subscriptions_text-container {
+    flex-wrap: wrap;
+  }
+}
+.subscriptions_text-container._type-container {
+  align-items: flex-start;
+}

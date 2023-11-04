@@ -1,0 +1,19 @@
+.footer {
+  min-height: 62px;
+  border-top: 2px solid var(--text-color-primary);
+  display: flex;
+}
+
+.footer .footer_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+@media (max-width: 576px) {
+  .footer .footer_container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

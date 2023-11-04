@@ -1,0 +1,11 @@
+.counselors .counselors_profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+}
+@media (max-width: 576px) {
+  .counselors .counselors_profile-container {
+    flex-wrap: wrap;
+  }
+}

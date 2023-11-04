@@ -1,0 +1,11 @@
+.hero .hero_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 576px) {
+  .hero .hero_container {
+    flex-wrap: wrap;
+  }
+}
